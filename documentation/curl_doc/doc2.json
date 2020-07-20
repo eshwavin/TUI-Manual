@@ -1,0 +1,692 @@
+{
+    "Establish a Transfer": {
+        "Requests and Reponses": [
+            {
+                "flag": "--abstract-unix-socket <path>",
+                "short-description": "Connect via abstract Unix domain socket"
+            },
+            {
+                "flag": "--alt-svc",
+                "short-description": "<file name> Enable alt-svc with this cache file"
+            },
+            {
+                "flag": "--anyauth",
+                "short-description": "Pick any authentication method"
+            },
+            {
+                "flag": "--connect-timeout <seconds>",
+                "short-description": "Maximum time allowed for connection"
+            },
+            {
+                "flag": "--connect-to <HOST1:PORT1:HOST2:PORT2>",
+                "short-description": "Connect to host"
+            },
+            {
+                "flag": "-C, --continue-at <offset>",
+                "short-description": "Resumed transfer offset"
+            },
+            {
+                "flag": "--crlf",
+                "short-description": "Convert LF to CRLF in upload"
+            },
+            {
+                "flag": "--crlfile <file>",
+                "short-description": "Get a CRL list in PEM format from the given file"
+            },
+            {
+                "flag": "-F, --form <name=content>",
+                "short-description": "Specify multipart MIME data"
+            },
+            {
+                "flag": "--form-string <name=string>",
+                "short-description": "Specify multipart MIME data"
+            },
+            {
+                "flag": "--interface <name>",
+                "short-description": "Use network INTERFACE (or address)"
+            }
+        ],
+        "DNS Settings": [
+            {
+                "flag": "--dns-interface <interface>",
+                "short-description": "Interface to use for DNS requests"
+            },
+            {
+                "flag": "--dns-ipv4-addr <address>",
+                "short-description": "IPv4 address to use for DNS requests"
+            },
+            {
+                "flag": "--dns-ipv6-addr <address>",
+                "short-description": "IPv6 address to use for DNS requests"
+            },
+            {
+                "flag": "--dns-servers <addresses>",
+                "short-description": "DNS server addrs to use"
+            },
+            {
+                "flag": "--doh-url <URL>",
+                "short-description": "Resolve host names over DOH"
+            }
+        ],
+        "HTTP Settings": [
+            {
+                "flag": "-d, --data <data>",
+                "short-description": "HTTP POST data"
+            },
+            {
+                "flag": "--data-ascii <data>",
+                "short-description": "HTTP POST ASCII data"
+            },
+            {
+                "flag": "--data-binary <data>",
+                "short-description": "HTTP POST binary data"
+            },
+            {
+                "flag": "--data-raw <data>",
+                "short-description": "HTTP POST data, '@' allowed"
+            },
+            {
+                "flag": "--data-urlencode <data>",
+                "short-description": "HTTP POST data url encoded"
+            },
+            {
+                "flag": "--delegation <LEVEL>",
+                "short-description": "GSS-API delegation permission"
+            },
+            {
+                "flag": "--digest",
+                "short-description": "Use HTTP Digest Authentication"
+            },
+            {
+                "flag": "-G, --get",
+                "short-description": "Put the post data in the URL and use GET"
+            },
+            {
+                "flag": "--http0.9",
+                "short-description": "Allow HTTP 0.9 responses"
+            },
+            {
+                "flag": "-0, --http1.0",
+                "short-description": "Use HTTP 1.0"
+            },
+            {
+                "flag": "--http1.1",
+                "short-description": "Use HTTP 1.1"
+            },
+            {
+                "flag": "--http2",
+                "short-description": "Use HTTP 2"
+            },
+            {
+                "flag": "--http2-prior-knowledge",
+                "short-description": "Use HTTP 2 without HTTP/1.1 Upgrade"
+            },
+            {
+                "flag": "--basic",
+                "short-description": "Use HTTP Basic Authentication"
+            },
+            {
+                "flag": "-X, --request <command>",
+                "short-description": "Specify request command to use"
+            },
+            {
+                "flag": "--request-target",
+                "short-description": "Specify the target for this request"
+            },
+            {
+                "flag": "-H, --header <header/@file>",
+                "short-description": "Pass custom header(s) to server"
+            },
+            {
+                "flag": "-f, --fail",
+                "short-description": "Fail silently (no output at all) on HTTP errors"
+            }
+        ],
+        "Proxy and SOCKS Settings": [
+            {
+                "flag": "--haproxy-protocol",
+                "short-description": "Send HAProxy PROXY protocol v1 header"
+            },
+            {
+                "flag": "-x, --proxy",
+                "short-description": "[protocol://]host[:port] Use this proxy"
+            },
+            {
+                "flag": "--proxy-anyauth",
+                "short-description": "Pick any proxy authentication method"
+            },
+            {
+                "flag": "--proxy-basic",
+                "short-description": "Use Basic authentication on the proxy"
+            },
+            {
+                "flag": "--proxy-cacert <file>",
+                "short-description": "CA certificate to verify peer against for proxy"
+            },
+            {
+                "flag": "--proxy-capath <dir>",
+                "short-description": "CA directory to verify peer against for proxy"
+            },
+            {
+                "flag": "--proxy-cert <cert[:passwd]>",
+                "short-description": "Set client certificate for proxy"
+            },
+            {
+                "flag": "--proxy-cert-type <type>",
+                "short-description": "Client certificate type for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-ciphers <list>",
+                "short-description": "SSL ciphers to use for proxy"
+            },
+            {
+                "flag": "--proxy-crlfile <file>",
+                "short-description": "Set a CRL list for proxy"
+            },
+            {
+                "flag": "--proxy-digest",
+                "short-description": "Use Digest authentication on the proxy"
+            },
+            {
+                "flag": "--proxy-header <header/@file>",
+                "short-description": "Pass custom header(s) to proxy"
+            },
+            {
+                "flag": "--proxy-insecure",
+                "short-description": "Do HTTPS proxy connections without verifying the proxy"
+            },
+            {
+                "flag": "--proxy-key <key>",
+                "short-description": "Private key for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-key-type <type>",
+                "short-description": "Private key file type for proxy"
+            },
+            {
+                "flag": "--proxy-negotiate",
+                "short-description": "Use HTTP Negotiate (SPNEGO) authentication on the proxy"
+            },
+            {
+                "flag": "--proxy-ntlm",
+                "short-description": "Use NTLM authentication on the proxy"
+            },
+            {
+                "flag": "--proxy-pass <phrase>",
+                "short-description": "Pass phrase for the private key for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-pinnedpubkey <hashes>",
+                "short-description": "FILE/HASHES public key to verify proxy with"
+            },
+            {
+                "flag": "--proxy-service-name <name>",
+                "short-description": "SPNEGO proxy service name"
+            },
+            {
+                "flag": "--proxy-ssl-allow-beast",
+                "short-description": "Allow security flaw for interop for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-tls13-ciphers",
+                "short-description": "<ciphersuite list> TLS 1.3 proxy cipher suites"
+            },
+            {
+                "flag": "--proxy-tlsauthtype <type>",
+                "short-description": "TLS authentication type for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-tlspassword <string>",
+                "short-description": "TLS password for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-tlsuser <name>",
+                "short-description": "TLS username for HTTPS proxy"
+            },
+            {
+                "flag": "--proxy-tlsv1",
+                "short-description": "Use TLSv1 for HTTPS proxy"
+            },
+            {
+                "flag": "-U, --proxy-user <user:password>",
+                "short-description": "Proxy user and password"
+            },
+            {
+                "flag": "--proxy1.0 <host[:port]>",
+                "short-description": "Use HTTP/1.0 proxy on given port"
+            },
+            {
+                "flag": "-p, --proxytunnel",
+                "short-description": "Operate through an HTTP proxy tunnel (using CONNECT)"
+            },
+            {
+                "flag": "--socks4 <host[:port]>",
+                "short-description": "SOCKS4 proxy on given host + port"
+            },
+            {
+                "flag": "--socks4a <host[:port]>",
+                "short-description": "SOCKS4a proxy on given host + port"
+            },
+            {
+                "flag": "--socks5 <host[:port]>",
+                "short-description": "SOCKS5 proxy on given host + port"
+            },
+            {
+                "flag": "--socks5-basic",
+                "short-description": "Enable username/password auth for SOCKS5 proxies"
+            },
+            {
+                "flag": "--socks5-gssapi",
+                "short-description": "Enable GSS-API auth for SOCKS5 proxies"
+            },
+            {
+                "flag": "--socks5-gssapi-nec",
+                "short-description": "Compatibility with NEC SOCKS5 server"
+            },
+            {
+                "flag": "--socks5-gssapi-service <name>",
+                "short-description": "SOCKS5 proxy service name for GSS-API"
+            },
+            {
+                "flag": "--socks5-hostname <host[:port]>",
+                "short-description": "SOCKS5 proxy, pass host name to proxy"
+            }
+        ],
+        "FTP Settings": [
+            {
+                "flag": "--ftp-account <data>",
+                "short-description": "Account data string"
+            },
+            {
+                "flag": "--ftp-alternative-to-user <command>",
+                "short-description": "String to replace USER [name]"
+            },
+            {
+                "flag": "--ftp-create-dirs",
+                "short-description": "Create the remote dirs if not present"
+            },
+            {
+                "flag": "--ftp-method <method>",
+                "short-description": "Control CWD usage"
+            },
+            {
+                "flag": "--ftp-pasv",
+                "short-description": "Use PASV/EPSV instead of PORT"
+            },
+            {
+                "flag": "--disable-eprt",
+                "short-description": "Inhibit using EPRT or LPRT"
+            },
+            {
+                "flag": "--disable-epsv",
+                "short-description": "Inhibit using EPSV"
+            },
+            {
+                "flag": "-P, --ftp-port <address>",
+                "short-description": "Use PORT instead of PASV"
+            },
+            {
+                "flag": "--ftp-pret",
+                "short-description": "Send PRET before PASV"
+            },
+            {
+                "flag": "--ftp-skip-pasv-ip",
+                "short-description": "Skip the IP address for PASV"
+            },
+            {
+                "flag": "--ftp-ssl-ccc",
+                "short-description": "Send CCC after authenticating"
+            },
+            {
+                "flag": "--ftp-ssl-ccc-mode <active/passive>",
+                "short-description": "Set CCC mode"
+            },
+            {
+                "flag": "--ftp-ssl-control",
+                "short-description": "Require SSL/TLS for FTP login, clear for transfer"
+            }
+        ]
+    },
+    "Secure Connections": {
+        "SSL": [
+            {
+                "flag": "--ciphers",
+                "short-description": "<list of ciphers> SSL ciphers to use"
+            },
+            {
+                "flag": "--ssl",
+                "short-description": "Try SSL/TLS"
+            },
+            {
+                "flag": "--ssl-allow-beast",
+                "short-description": "Allow security flaw to improve interop"
+            },
+            {
+                "flag": "--ssl-no-revoke",
+                "short-description": "Disable cert revocation checks (Schannel)"
+            },
+            {
+                "flag": "--ssl-reqd",
+                "short-description": "Require SSL/TLS"
+            },
+            {
+                "flag": "-2, --sslv2",
+                "short-description": "Use SSLv2"
+            },
+            {
+                "flag": "-3, --sslv3",
+                "short-description": "Use SSLv3"
+            },
+            {
+                "flag": "-k, --insecure",
+                "short-description": "Allow insecure server connections when using SSL"
+            },
+            {
+                "flag": "--ftp-ssl-ccc",
+                "short-description": "Send CCC after authenticating"
+            },
+            {
+                "flag": "--ftp-ssl-ccc-mode <active/passive>",
+                "short-description": "Set CCC mode"
+            },
+            {
+                "flag": "--ftp-ssl-control",
+                "short-description": "Require SSL/TLS for FTP login, clear for transfer"
+            }
+        ],
+        "TLS": [
+            {
+                "flag": "--tls-max <VERSION>",
+                "short-description": "Set maximum allowed TLS version"
+            },
+            {
+                "flag": "--tls13-ciphers",
+                "short-description": "<list of TLS 1.3 ciphersuites> TLS 1.3 cipher suites to use"
+            },
+            {
+                "flag": "--tlsauthtype <type>",
+                "short-description": "TLS authentication type"
+            },
+            {
+                "flag": "--tlspassword",
+                "short-description": "TLS password"
+            },
+            {
+                "flag": "--tlsuser <name>",
+                "short-description": "TLS user name"
+            },
+            {
+                "flag": "-1, --tlsv1",
+                "short-description": "Use TLSv1.0 or greater"
+            },
+            {
+                "flag": "--tlsv1.0",
+                "short-description": "Use TLSv1.0 or greater"
+            },
+            {
+                "flag": "--tlsv1.1",
+                "short-description": "Use TLSv1.1 or greater"
+            },
+            {
+                "flag": "--tlsv1.2",
+                "short-description": "Use TLSv1.2 or greater"
+            },
+            {
+                "flag": "--tlsv1.3",
+                "short-description": "Use TLSv1.3 or greater"
+            },
+            {
+                "flag": "--egd-file <file>",
+                "short-description": "EGD socket path for random data"
+            },
+            {
+                "flag": "--engine <name>",
+                "short-description": "Crypto engine to use"
+            },
+            {
+                "flag": "--false-start",
+                "short-description": "Enable TLS False Start"
+            }
+        ],
+        "Certificates": [
+            {
+                "flag": "--cacert <file>",
+                "short-description": "CA certificate to verify peer against"
+            },
+            {
+                "flag": "--capath <dir>",
+                "short-description": "CA directory to verify peer against"
+            },
+            {
+                "flag": "-E, --cert <certificate[:password]>",
+                "short-description": "Client certificate file and password"
+            },
+            {
+                "flag": "--cert-status",
+                "short-description": "Verify the status of the server certificate"
+            },
+            {
+                "flag": "--cert-type <type>",
+                "short-description": "Certificate file type (DER/PEM/ENG)"
+            },
+            {
+                "flag": "--key <key>",
+                "short-description": "Private key file name"
+            },
+            {
+                "flag": "--key-type <type>",
+                "short-description": "Private key file type (DER/PEM/ENG)"
+            },
+            {
+                "flag": "--basic",
+                "short-description": "Use HTTP Basic Authentication"
+            }
+        ]
+    },
+    "Size, Compression, Speed, and Timing": {
+        "TEST": [
+        {
+            "flag": "--limit-rate <speed>",
+            "short-description": "Limit transfer speed to RATE"
+        },
+        {
+            "flag": "--max-filesize <bytes>",
+            "short-description": "Maximum file size to download"
+        },
+        {
+            "flag": "--max-redirs <num>",
+            "short-description": "Maximum number of redirects allowed"
+        },
+        {
+            "flag": "-m, --max-time <seconds>",
+            "short-description": "Maximum time allowed for the transfer"
+        },
+        {
+            "flag": "-Y, --speed-limit <speed>",
+            "short-description": "Stop transfers slower than this"
+        },
+        {
+            "flag": "-y, --speed-time <seconds>",
+            "short-description": "Trigger 'speed-limit' abort after this time"
+        },
+        {
+            "flag": "-z, --time-cond <time>",
+            "short-description": "Transfer based on a time condition"
+        },
+        {
+            "flag": "--connect-timeout <seconds>",
+            "short-description": "Maximum time allowed for connection"
+        },
+        {
+            "flag": "--compressed",
+            "short-description": "Request compressed response"
+        },
+        {
+            "flag": "--compressed-ssh",
+            "short-description": "Enable SSH compression"
+        }
+    ]},
+    "Output Format, Style, and Files": {
+        "TEST": [
+        {
+            "flag": "-a, --append",
+            "short-description": "Append to target file when uploading"
+        },
+        {
+            "flag": "--libcurl <file>",
+            "short-description": "Dump libcurl equivalent code of this command line"
+        },
+        {
+            "flag": "-o, --output <file>",
+            "short-description": "Write to file instead of stdout"
+        },
+        {
+            "flag": "--styled-output",
+            "short-description": "Enable styled output for HTTP headers"
+        },
+        {
+            "flag": "-w, --write-out <format>",
+            "short-description": "Use output FORMAT after completion"
+        },
+        {
+            "flag": "--xattr",
+            "short-description": "Store metadata in extended file attributes"
+        }
+    ]},
+    "Other Options": {
+        "Cookies": [
+            {
+                "flag": "-b, --cookie <data|filename>",
+                "short-description": "Send cookies from string/file"
+            },
+            {
+                "flag": "-c, --cookie-jar <filename>",
+                "short-description": "Write cookies to <filename> after operation"
+            },
+            {
+                "flag": "-j, --junk-session-cookies",
+                "short-description": "Ignore session cookies read from file"
+            }
+        ],
+        "URL's": [
+            {
+                "flag": "-g, --globoff",
+                "short-description": "Disable URL sequences and ranges using {} and []"
+            },
+            {
+                "flag": "--happy-eyeballs-timeout-ms <milliseconds>",
+                "short-description": "How long to wait in milliseconds for IPv6 before trying IPv4"
+            },
+            {
+                "flag": "-4, --ipv4",
+                "short-description": "Resolve names to IPv4 addresses"
+            },
+            {
+                "flag": "-6, --ipv6",
+                "short-description": "Resolve names to IPv6 addresses"
+            },
+            {
+                "flag": "--url <url>",
+                "short-description": "URL to work with"
+            }
+        ],
+        "Debugging and Logging": [
+            {
+                "flag": "--trace <file>",
+                "short-description": "Write a debug trace to FILE"
+            },
+            {
+                "flag": "--trace-ascii <file>",
+                "short-description": "Like --trace, but without hex output"
+            },
+            {
+                "flag": "--trace-time",
+                "short-description": "Add time stamps to trace/verbose output"
+            }
+        ],
+        "Help and Documentation": [
+            {
+                "flag": "-I, --head",
+                "short-description": "Show document info only"
+            },
+            {
+                "flag": "-h, --help",
+                "short-description": "This help text"
+            },
+            {
+                "flag": "-i, --include",
+                "short-description": "Include protocol response headers in the output"
+            },
+            {
+                "flag": "-M, --manual",
+                "short-description": "Display the full manual"
+            },
+            {
+                "flag": "-s, --silent",
+                "short-description": "Silent mode"
+            },
+            {
+                "flag": "-v, --verbose",
+                "short-description": "Make the operation more talkative"
+            },
+            {
+                "flag": "-V, --version",
+                "short-description": "Show version number and quit"
+            }
+        ],
+        "Other Options": [
+            {
+                "flag": "-D, --dump-header <filename>",
+                "short-description": "Write the received headers to <filename>"
+            },
+            {
+                "flag": "--fail-early",
+                "short-description": "Fail on first transfer error, do not continue"
+            },
+            {
+                "flag": "-K, --config <file>",
+                "short-description": "Read config from a file"
+            },
+            {
+                "flag": "-q, --disable",
+                "short-description": "Disable .curlrc"
+            },
+            {
+                "flag": "--disallow-username-in-url",
+                "short-description": "Disallow username in url"
+            },
+            {
+                "flag": "--create-dirs",
+                "short-description": "Create necessary local directory hierarchy"
+            },
+            {
+                "flag": "--keepalive-time <seconds>",
+                "short-description": "Interval time for keepalive probes"
+            },
+            {
+                "flag": "--tr-encoding",
+                "short-description": "Request compressed transfer encoding"
+            },
+            {
+                "flag": "--unix-socket <path>",
+                "short-description": "Connect through this Unix domain socket"
+            },
+            {
+                "flag": "-T, --upload-file <file>",
+                "short-description": "Transfer local FILE to destination"
+            },
+            {
+                "flag": "-B, --use-ascii",
+                "short-description": "Use ASCII/text transfer"
+            },
+            {
+                "flag": "-u, --user <user:password>",
+                "short-description": "Server user and password"
+            },
+            {
+                "flag": "-A, --user-agent <name>",
+                "short-description": "Send User-Agent <name> to server"
+            }
+        ]
+    }
+}

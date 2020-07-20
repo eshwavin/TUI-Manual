@@ -1,0 +1,458 @@
+{
+   "What to Copy": {
+      "Copy with Constraints": [
+         {
+            "flag": "-I, --ignore-times",
+            "short-description": "don't skip files that match in size and mod-time"
+         },
+         {
+            "flag": "--size-only",
+            "short-description": "skip files that match in size"
+         },
+         {
+            "flag": "-F",
+            "short-description": "same as --filter='dir-merge /.rsync-filter\nrepeated: --filter='- .rsync-filter'"
+         },
+         {
+            "flag": "--exclude=PATTERN",
+            "short-description": "exclude files matching PATTERN"
+         },
+         {
+            "flag": "--exclude-from=FILE",
+            "short-description": "read exclude patterns from FILE"
+         },
+         {
+            "flag": "--include=PATTERN",
+            "short-description": "don't exclude files matching PATTERN"
+         },
+         {
+            "flag": "--include-from=FILE",
+            "short-description": "read include patterns from FILE"
+         },
+         {
+            "flag": "--max-size=SIZE",
+            "short-description": "don't transfer any file larger than SIZE"
+         },
+         {
+            "flag": "--min-size=SIZE",
+            "short-description": "don't transfer any file smaller than SIZE"
+         }
+      ],
+      "Other Options": [
+         {
+            "flag": "-r, --recursive",
+            "short-description": "recurse into directories"
+         },
+         {
+            "flag": "-R, --relative",
+            "short-description": "use relative path names"
+         },
+         {
+            "flag": "--no-implied-dirs",
+            "short-description": "don't send implied dirs with --relative"
+         },
+         {
+            "flag": "--modify-window=NUM",
+            "short-description": "compare mod-times with reduced accuracy"
+         },
+         {
+            "flag": "--files-from=FILE",
+            "short-description": "read list of source-file names from FILE"
+         }
+      ]
+   },
+   "How to Copy It": {
+      "Links and Shortcuts": [
+         {
+            "flag": "-l, --links",
+            "short-description": "copy symlinks as symlinks"
+         },
+         {
+            "flag": "-L, --copy-links",
+            "short-description": "transform symlink into referent file/dir"
+         },
+         {
+            "flag": "--copy-unsafe-links",
+            "short-description": "only \"unsafe\" symlinks are transformed"
+         },
+         {
+            "flag": "--safe-links",
+            "short-description": "ignore symlinks that point outside the source tree"
+         },
+         {
+            "flag": "-H, --hard-links",
+            "short-description": "preserve hard links"
+         }
+      ],
+      "Permissions and Ownership": [
+         {
+            "flag": "-p, --perms",
+            "short-description": "preserve permissions"
+         },
+         {
+            "flag": "--executability",
+            "short-description": "preserve the file's executability"
+         },
+         {
+            "flag": "--chmod=CHMOD",
+            "short-description": "affect file and/or directory permissions"
+         },
+         {
+            "flag": "-o, --owner",
+            "short-description": "preserve owner (super-user only)"
+         },
+         {
+            "flag": "-g, --group",
+            "short-description": "preserve group"
+         },
+         {
+            "flag": "--devices",
+            "short-description": "preserve device files (super-user only)"
+         },
+         {
+            "flag": "--specials",
+            "short-description": "preserve special files"
+         }
+      ],
+      "Other Options": [
+         {
+            "flag": "-D",
+            "short-description": "same as --devices --specials"
+         },
+         {
+            "flag": "-t, --times",
+            "short-description": "preserve times"
+         },
+         {
+            "flag": "-S, --sparse",
+            "short-description": "handle sparse files efficiently"
+         },
+         {
+            "flag": "-W, --whole-file",
+            "short-description": "copy files whole (without rsync algorithm)"
+         },
+         {
+            "flag": "-x, --one-file-system",
+            "short-description": "don't cross filesystem boundaries"
+         },
+         {
+            "flag": "-B, --block-size=SIZE",
+            "short-description": "force a fixed checksum block-SIZE"
+         },
+         {
+            "flag": "-z, --compress",
+            "short-description": "compress file data during the transfer"
+         },
+         {
+            "flag": "--compress-level=NUM",
+            "short-description": "explicitly set compression level"
+         },
+         {
+            "flag": "-m, --prune-empty-dirs",
+            "short-description": "prune empty directory chains from the file-list"
+         },
+         {
+            "flag": "--numeric-ids",
+            "short-description": "don't map uid/gid values by user/group name"
+         },
+         {
+            "flag": "--timeout=TIME",
+            "short-description": "set I/O timeout in seconds"
+         }
+      ]
+   },
+   "Cleanup and Deletion Options": {
+      "Cleanup and Deletion Options": [
+         {
+            "flag": "--existing",
+            "short-description": "skip creating new files on receiver"
+         },
+         {
+            "flag": "--ignore-existing",
+            "short-description": "skip updating files that already exist on receiver"
+         },
+         {
+            "flag": "--remove-source-files",
+            "short-description": "sender removes synchronized files (non-dirs)"
+         },
+         {
+            "flag": "--del",
+            "short-description": "an alias for --delete-during"
+         },
+         {
+            "flag": "--delete",
+            "short-description": "delete extraneous files from destination dirs"
+         },
+         {
+            "flag": "--delete-before",
+            "short-description": "receiver deletes before transfer (default)"
+         },
+         {
+            "flag": "--delete-during",
+            "short-description": "receiver deletes during transfer, not before"
+         },
+         {
+            "flag": "--delete-after",
+            "short-description": "receiver deletes after transfer, not before"
+         },
+         {
+            "flag": "--delete-excluded",
+            "short-description": "also delete excluded files from destination dirs"
+         },
+         {
+            "flag": "--ignore-errors",
+            "short-description": "delete even if there are I/O errors"
+         },
+         {
+            "flag": "--force",
+            "short-description": "force deletion of directories even if not empty"
+         },
+         {
+            "flag": "--max-delete=NUM",
+            "short-description": "don't delete more than NUM files"
+         },
+         {
+            "flag": "--partial",
+            "short-description": "keep partially transferred files"
+         },
+         {
+            "flag": "--partial-dir=DIR",
+            "short-description": "put a partially transferred file into DIR"
+         },
+         {
+            "flag": "--delay-updates",
+            "short-description": "put all updated files into place at transfer's end"
+         }
+      ]
+   },
+   "Destination Options": {
+      "Logging": [
+         {
+            "flag": "--log-file=FILE",
+            "short-description": "log what we're doing to the specified FILE"
+         },
+         {
+            "flag": "--log-file-format=FMT",
+            "short-description": "log updates using the specified FMT"
+         }
+      ],
+      "Remote Settings and Networking": [
+         {
+            "flag": "-e, --rsh=COMMAND",
+            "short-description": "specify the remote shell to use"
+         },
+         {
+            "flag": "--rsync-path=PROGRAM",
+            "short-description": "specify the rsync to run on the remote machine"
+         },
+         {
+            "flag": "-0, --from0",
+            "short-description": "all *-from/filter files are delimited by 0s"
+         },
+         {
+            "flag": "--address=ADDRESS",
+            "short-description": "bind address for outgoing socket to daemon"
+         },
+         {
+            "flag": "--port=PORT",
+            "short-description": "specify double-colon alternate port number"
+         },
+         {
+            "flag": "--sockopts=OPTIONS",
+            "short-description": "specify custom TCP options"
+         },
+         {
+            "flag": "--blocking-io",
+            "short-description": "use blocking I/O for the remote shell"
+         },
+         {
+            "flag": "--stats",
+            "short-description": "give some file-transfer stats"
+         },
+         {
+            "flag": "-4, --ipv4",
+            "short-description": "prefer IPv4"
+         },
+         {
+            "flag": "-6, --ipv6",
+            "short-description": "prefer IPv6"
+         }
+      ],
+      "Other Options": [
+         {
+            "flag": "-c, --checksum",
+            "short-description": "skip based on checksum, not mod-time & size"
+         },
+         {
+            "flag": "-a, --archive",
+            "short-description": "archive mode; same as -rlptgoD (no -H)"
+         },
+         {
+            "flag": "--no-OPTION",
+            "short-description": "turn off an implied OPTION (e.g. --no-D)"
+         },
+         {
+            "flag": "-b, --backup",
+            "short-description": "make backups (see --suffix & --backup-dir)"
+         },
+         {
+            "flag": "--backup-dir=DIR",
+            "short-description": "make backups into hierarchy based in DIR"
+         },
+         {
+            "flag": "--suffix=SUFFIX",
+            "short-description": "set backup suffix (default ~ w/o --backup-dir)"
+         },
+         {
+            "flag": "-u, --update",
+            "short-description": "skip files that are newer on the receiver"
+         },
+         {
+            "flag": "--inplace",
+            "short-description": "update destination files in-place (SEE MAN PAGE)"
+         },
+         {
+            "flag": "--append",
+            "short-description": "append data onto shorter files"
+         },
+         {
+            "flag": "-T, --temp-dir=DIR",
+            "short-description": "create temporary files in directory DIR"
+         },
+         {
+            "flag": "-y, --fuzzy",
+            "short-description": "find similar file for basis if no dest file"
+         },
+         {
+            "flag": "--compare-dest=DIR",
+            "short-description": "also compare destination files relative to DIR"
+         },
+         {
+            "flag": "--copy-dest=DIR",
+            "short-description": "... and include copies of unchanged files"
+         },
+         {
+            "flag": "--link-dest=DIR",
+            "short-description": "hardlink to files in DIR when unchanged"
+         },
+         {
+            "flag": "-C, --cvs-exclude",
+            "short-description": "auto-ignore files the same way CVS does"
+         },
+         {
+            "flag": "-h, --human-readable",
+            "short-description": "output numbers in a human-readable format"
+         },
+         {
+            "flag": "--progress",
+            "short-description": "show progress during transfer"
+         },
+         {
+            "flag": "-P",
+            "short-description": "same as --partial --progress"
+         },
+         {
+            "flag": "-i, --itemize-changes",
+            "short-description": "output a change-summary for all updates"
+         },
+         {
+            "flag": "--out-format=FORMAT",
+            "short-description": "output updates using the specified FORMAT"
+         },
+         {
+            "flag": "--password-file=FILE",
+            "short-description": "read password from FILE"
+         },
+         {
+            "flag": "--list-only",
+            "short-description": "list the files instead of copying them"
+         },
+         {
+            "flag": "--bwlimit=KBPS",
+            "short-description": "limit I/O bandwidth; KBytes per second"
+         },
+         {
+            "flag": "--write-batch=FILE",
+            "short-description": "write a batched update to FILE"
+         },
+         {
+            "flag": "--only-write-batch=FILE",
+            "short-description": "like --write-batch but w/o updating destination"
+         },
+         {
+            "flag": "--read-batch=FILE",
+            "short-description": "read a batched update from FILE"
+         },
+         {
+            "flag": "--protocol=NUM",
+            "short-description": "force an older protocol version to be used"
+         }
+      ]
+   },
+   "Other Options": {
+      "Help and Documentation": [
+         {
+            "flag": "--version",
+            "short-description": "print version number"
+         },
+         {
+            "flag": "-h, --help",
+            "short-description": "show this help (-h works with no other options)"
+         },
+         {
+            "flag": "-v, --verbose",
+            "short-description": "increase verbosity"
+         }
+      ],
+      "Other Options": [
+         {
+            "flag": "-i, --itemize-changes",
+            "short-description": "output a change-summary for all updates"
+         },
+         {
+            "flag": "--out-format=FORMAT",
+            "short-description": "output updates using the specified FORMAT"
+         },
+         {
+            "flag": "--password-file=FILE",
+            "short-description": "read password from FILE"
+         },
+         {
+            "flag": "--list-only",
+            "short-description": "list the files instead of copying them"
+         },
+         {
+            "flag": "--bwlimit=KBPS",
+            "short-description": "limit I/O bandwidth; KBytes per second"
+         },
+         {
+            "flag": "--write-batch=FILE",
+            "short-description": "write a batched update to FILE"
+         },
+         {
+            "flag": "--only-write-batch=FILE",
+            "short-description": "like --write-batch but w/o updating destination"
+         },
+         {
+            "flag": "--read-batch=FILE",
+            "short-description": "read a batched update from FILE"
+         },
+         {
+            "flag": "--protocol=NUM",
+            "short-description": "force an older protocol version to be used"
+         },
+         {
+            "flag": "-n, --dry-run",
+            "short-description": "show what would have been transferred"
+         },
+         {
+            "flag": "-q, --quiet",
+            "short-description": "suppress non-error messages"
+         },
+         {
+            "flag": "--no-motd",
+            "short-description": "suppress daemon-mode MOTD (see manpage caveat)"
+         }
+      ]
+   }
+}
